@@ -1,0 +1,512 @@
+{
+	"info": {
+		"_postman_id": "a78c91f6-e443-4996-958e-6b9f9efdc3d2",
+		"name": "RESTful API Go ALTA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Part 1 - a - API 1",
+			"item": [
+				{
+					"name": "Getting 2 top-headlines from Indonesia",
+					"request": {
+						"auth": {
+							"type": "apikey"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?country=id&pageSize=2&apiKey={{newsapi_key}}",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "id"
+								},
+								{
+									"key": "pageSize",
+									"value": "2"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{newsapi_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[Err] Getting 3 articles about backend developer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=backend+developer&pageSize=3",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "backend+developer"
+								},
+								{
+									"key": "pageSize",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting 3 articles about backend developer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=backend+developer&pageSize=3&apiKey={{newsapi_key}}",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "backend+developer"
+								},
+								{
+									"key": "pageSize",
+									"value": "3"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{newsapi_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting 2 top-headlines about backend",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?q=backend+developer&pageSize=2&apiKey={{newsapi_key}}",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "backend+developer"
+								},
+								{
+									"key": "pageSize",
+									"value": "2"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{newsapi_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting 2 top-headlines in category tech in Indonesia",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?category=technology&country=id&pageSize=2&apiKey={{newsapi_key}}",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "technology"
+								},
+								{
+									"key": "country",
+									"value": "id"
+								},
+								{
+									"key": "pageSize",
+									"value": "2"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{newsapi_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Part 1 - b - API 2",
+			"item": [
+				{
+					"name": "Getting API resources list (root)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting planets list and data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/planets",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"planets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting detailed info about people-2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/people/2",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"people",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting data about 'tatooine' in planets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/planets?search=tatooine",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"planets"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "tatooine"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting schema of planets data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/planets/schema/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"planets",
+								"schema",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Part 1 - c - API 3",
+			"item": [
+				{
+					"name": "Getting auth token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonResponse = pm.response.json();\r",
+									"pm.environment.set(\"rentabook_token\", jsonResponse.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://app.swaggerhub.com/apis-docs/sepulsa/RentABook-API/1.0.0/token?client_id=jwtInternal&client_secret=jwtMerchant'",
+							"protocol": "https",
+							"host": [
+								"app",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"apis-docs",
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"token"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "jwtInternal"
+								},
+								{
+									"key": "client_secret",
+									"value": "jwtMerchant'"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adding new user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{rentabook_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"ilham\",\r\n  \"age\": 10,\r\n  \"sex\": \"male\",\r\n  \"client_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://app.swaggerhub.com/apis-docs/sepulsa/RentABook-API/1.0.0/user",
+							"protocol": "https",
+							"host": [
+								"app",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"apis-docs",
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting user-1 details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{rentabook_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://app.swaggerhub.com/apis-docs/sepulsa/RentABook-API/1.0.0/user/1",
+							"protocol": "https",
+							"host": [
+								"app",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"apis-docs",
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating user-1 data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{rentabook_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"ilham\",\r\n  \"age\": 12,\r\n  \"sex\": \"male\",\r\n  \"client_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://app.swaggerhub.com/apis-docs/sepulsa/RentABook-API/1.0.0/user/1",
+							"protocol": "https",
+							"host": [
+								"app",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"apis-docs",
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting user-1 data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{rentabook_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://app.swaggerhub.com/apis-docs/sepulsa/RentABook-API/1.0.0/user/1",
+							"protocol": "https",
+							"host": [
+								"app",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"apis-docs",
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
